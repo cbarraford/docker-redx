@@ -4,9 +4,9 @@ Creates a docker container for [redx](https://github.com/rstudio/redx).
 
 Configuration
 =============
-The configuration file of redx can be dynamically configured by environment variables. Sane defaults are picked for you so you do not need to supply any environment variables.
+The configuration file of redx can be dynamically configured by passing environment variables to `docker run`. Sane defaults are picked for you so you do not need to supply any environment variables.
 
-Here are the list (which are linked to the [redx equivalents](https://github.com/rstudio/redx/blob/master/README.md#configuration)). It is important to note that when setting a string value, include the quotes (ie `REDIS_HOST="'127.0.0.1'"`)
+Here are the list (which are linked to the [redx equivalents](https://github.com/rstudio/redx/blob/master/README.md#configuration)). It is important to note that when setting a string value, include the quotes (ie `REDIS_HOST="'127.0.0.1'"`). You are basically inserting lua code into the configuration file.
 
 * REDIS\_HOST
 * REDIS\_PORT
