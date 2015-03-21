@@ -23,5 +23,5 @@ If you're looking to do further customization like adding custom plugins or usin
 
 ### Example
 ```
-docker run --name redx -d -p 80:80 -p 443:443 -p 8081:8081 -p 8082:8082 -e REDIS_HOST="'redis.domain.com'" -e PLUGINS=\{'stickiness','random'\} cbarraford/redx
+docker run --name redx -d -p 80:80 -p 443:443 -p 8081:8081 -p 8082:8082 -e REDIS_HOST="'redis.domain.com'" -e PLUGINS=\{\'stickiness\',\'random\'\} cbarraford/redx
 ```
